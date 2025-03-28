@@ -1,12 +1,17 @@
 import random
 n = random.randint(1,100)
-while true:
-print("Guess the number")
-x = int(input("enter the number"))
-if(x<n):
-print("the number is too low")
-elif(x>n):
-print("the number is too high")
+y = 0
+while (y<5):
+ print("Guess the number")
+ x = int(input("enter the number"))
+ y = y+1
+ print("please try again")
+ if(x<n):
+  print("the number is too low")
+ elif(x>n):
+  print("the number is too high")
+ elif(x==n):
+  print("congratulation you gussed the correct number")
 else:
-print("congratulation you gussed the correct number")
-break;
+ print("you lost the game")
+   
